@@ -2,10 +2,7 @@
   "name": "coronavirus-data-vis",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "main": "app/index.html",
   "dependencies": {},
   "devDependencies": {
     "gulp": "^4.0.2",
@@ -18,5 +15,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }
