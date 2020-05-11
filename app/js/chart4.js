@@ -151,6 +151,10 @@ function renderChart4() {
             map: 'china',
             roam: true,
             zoom: 1,
+            scaleLimit: {
+              min: 1,
+              max: 3,
+            },
             label: {
               emphasis: {
                 show: false
