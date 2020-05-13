@@ -16,23 +16,24 @@ function renderChart5() {
     },
     grid: {
       containLabel: true,
-      left: 20,
-      top: '5%',
-      bottom: '10%',
+      left: 10,
+      top: '0',
+      bottom: '0',
       right: 100,
     },
     xAxis: {
       splitLine: {show: false},
       axisLabel: {show: false},
       axisTick: {show: false},
-      axisLine: {show: false}
+      axisLine: {show: false},
     },
     yAxis: {
-      data: Data_RumourTop20.slice(0, 5).map((row, index) => `Top ${index + 1}`),
+      data: Data_RumourTop20.slice(0, 5).map((row, index) => ``),
       inverse: true,
       axisLine: {show: false},
       axisTick: {show: false},
       axisLabel: {
+        show: false,
         margin: 30,
         fontSize: 14,
       },
@@ -48,7 +49,7 @@ function renderChart5() {
       symbol: Data_Pic,
       symbolRepeat: true,
       symbolMargin: '5%',
-      symbolSize: 50,
+      symbolSize: 40,
       data: Data_RumourTop20.slice(0, 5).map(data => Number(data[2])),
       label: {
         normal: {

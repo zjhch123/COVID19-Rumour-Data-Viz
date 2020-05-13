@@ -133,8 +133,6 @@ function renderChart4() {
           animationDurationUpdate: 1000,
           animationEasingUpdate: 'cubicInOut',
           grid: {
-            right: '1%',
-            top: '15%',
             bottom: '10%',
           },
           tooltip: {
@@ -151,6 +149,7 @@ function renderChart4() {
             map: 'china',
             roam: true,
             zoom: 1,
+            center: [105, 33],
             scaleLimit: {
               min: 1,
               max: 3,
@@ -169,14 +168,16 @@ function renderChart4() {
       };
 
       for (var n = 0; n < year.length; n++) {
+        const date = year[n].split('/');
         optionXyMap01.options.push({
           title:[{
-            text: `${year[n]} 谣言数据`,
+            text: `${date[0]}年${date[1]}月${date[2]}日`,
             left: 'center',
             top: '3%',
             textStyle: {
               color: '#000',
-              fontSize: 25
+              fontSize: 15,
+              fontFamily: 'Georgia, serif',
             }
           }],
           series: [
@@ -243,9 +244,9 @@ function renderChart4() {
               },
               itemStyle: {
                 normal: {
-                  color: colors[colorIndex][1],
+                  color: '#465975',
                   shadowBlur: 10,
-                  shadowColor: colors[colorIndex][1]
+                  shadowColor: '#465975'
                 }
               },
               zlevel: 1
@@ -254,6 +255,7 @@ function renderChart4() {
         })
       }
       chart.setOption(optionXyMap01);
+      window.c = chart;
     });
   });
 }

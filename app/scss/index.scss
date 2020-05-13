@@ -1,7 +1,169 @@
-html, body { margin: 0; padding: 0; }
+html, body { margin: 0; padding: 0; background-color: RGB(246, 246, 247); }
+
+header {
+  background-color: RGB(65, 88, 119);
+  height: 130px;
+  display: flex;
+  align-items: center;
+  img {
+    display: block;
+    width: 856px;
+    height: 96px;
+    margin: auto;
+  }
+}
+
+.container {
+  width: 1090px;
+  display: block;
+  margin: auto;
+  position: relative;
+  & > .row {
+    margin-top: 40px;
+  }
+}
+
+.row {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  .column {
+    position: relative;
+  }
+  .chart {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+  }
+  .logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 20px;
+    background-color: RGB(65, 88, 119);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 14px;
+      display: block;
+      &.small {
+        height: 13px;
+      }
+    }
+  }
+}
+
+.row-1 {
+  height: 435px;
+  .column-1 {
+    flex: 1 1 66.6%;
+  }
+  .column-2 {
+    flex: 1 1 33.3%;
+    display: flex;
+    flex-direction: column;
+    .row {
+      flex: 1;
+    }
+  }
+}
+.row-2 {
+  height: 500px;
+}
+.row-3 {
+  height: 291px;
+  .column-1 {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    .left {
+      height: 291px;
+      width: 160px;
+    }
+  }
+  .column-2 {
+    width: 40%;
+  }
+  .list {
+    .i-1 {
+      flex: 1 1 70%;
+    }
+    .i-2,
+    .i-3 {
+      flex: 1 1 15%;
+    }
+    .item-header {
+      height: 40px;
+      border: none !important;
+      display: flex;
+      .i-1,
+      .i-2,
+      .i-3 {
+        border: 1px solid white;
+        background: RGB(65, 90, 118);
+        line-height: 40px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+    .item {
+      display: flex;
+      border-bottom: 1px solid #999;
+      .i-1,.i-2,.i-3 {
+        line-height: 30px;
+        font-size: 14px;
+      }
+      .i-2, .i-3 {
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+        color: RGB(65, 90, 118);
+      }
+    }
+  }
+}
+footer {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  img {
+    width: 207px;
+    height: 49px;
+    display: block;
+  }
+  .blue {
+    margin-top: 12px;
+    background-color: RGB(65, 88, 119);
+    width: 100%;
+    height: 30px;
+  }
+}
+.v1,
+.v2 {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 350px;
+}
+.v1 {
+  top: 688px;
+  left: -200px;
+}
+.v2 {
+  top: 900px;
+  right: -200px;
+}
 
 div[id*=chart] {
-  width: 1090px;
-  height: 600px;
-  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 }
