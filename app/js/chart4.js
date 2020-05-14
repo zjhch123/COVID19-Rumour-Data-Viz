@@ -2,7 +2,7 @@
 function renderChart4() {
   const dom = document.getElementById("chart4");
   const chart = echarts.init(dom);
-  const uploadedDataURL = "/js/china.geojson";
+  const uploadedDataURL = "./js/china.geojson";
 
   const geoCoordMap = {
     '台湾': [121.5135,25.0308],
