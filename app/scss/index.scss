@@ -90,6 +90,36 @@ header {
     .left {
       height: 291px;
       width: 160px;
+      display: flex;
+      .left-left {
+        width: 33px;
+        background: white;
+        height: 100%;
+        font-size: 28px;
+        line-height: 28px;
+        color: RGB(65, 88, 119);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .left-right {
+        flex: 1;
+        height: 100%;
+        background-color: RGB(65, 88, 119);
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .top {
+          font-size: 60px;
+        }
+        .five {
+          font-size: 124px;
+        }
+      }
     }
     .right {
       width: 430px;
