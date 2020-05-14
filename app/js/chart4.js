@@ -177,6 +177,7 @@ function renderChart4() {
               color: '#000',
               fontSize: 15,
               fontFamily: 'gbk',
+              color: 'RGB(65, 88, 119)',
             }
           }],
           series: [
