@@ -26,7 +26,8 @@ function renderChart1() {
     ],
     yAxis: [
       {
-        type: 'value'
+        type: 'value',
+        name: '数量',
       }
     ],
     series: [

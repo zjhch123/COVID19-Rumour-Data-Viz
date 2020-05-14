@@ -30,10 +30,12 @@ function renderChart3() {
         {
           type: 'value',
           name: '政府每日行动数',
+          splitLine: {show: false},
         },
         {
           type: 'value',
           name: '每日谣言数量',
+          splitLine: {show: false},
         }
       ],
       series: [

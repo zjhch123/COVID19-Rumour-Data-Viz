@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'gbk';
+  src: url('../font/gbk.eot');
+  src: url('../font/gbk.eot?#iefix') format('embedded-opentype'),
+       url('../font/gbk.woff') format('woff'),
+       url('../font/gbk.ttf')  format('truetype'),
+       url('../font/gbk.svg#svgFontName') format('svg');
+  font-display: swap;
+}
+
 html, body { margin: 0; padding: 0; background-color: RGB(246, 246, 247); }
 
 header {
@@ -18,6 +28,7 @@ header {
   display: block;
   margin: auto;
   position: relative;
+  font-family: 'gbk';
   & > .row {
     margin-top: 40px;
   }
@@ -34,25 +45,21 @@ header {
     position: relative;
     width: 100%;
     height: 100%;
-    padding-top: 20px;
+    padding-top: 26px;
   }
   .logo {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
-    height: 20px;
+    height: 26px;
     background-color: RGB(65, 88, 119);
     display: flex;
     align-items: center;
     justify-content: center;
-    img {
-      height: 14px;
-      display: block;
-      &.small {
-        height: 13px;
-      }
-    }
+    font-size: 14px;
+    font-family: 'gbk';
+    color: white;
   }
 }
 
@@ -76,16 +83,21 @@ header {
 .row-3 {
   height: 291px;
   .column-1 {
-    width: 60%;
+    width: 55%;
+    flex: 0 0 55%;
     display: flex;
     flex-direction: row;
     .left {
       height: 291px;
       width: 160px;
     }
+    .right {
+      width: 430px;
+    }
   }
   .column-2 {
-    width: 40%;
+    width: 45%;
+    flex: 0 0 45%;
   }
   .list {
     .i-1 {
@@ -119,6 +131,7 @@ header {
       }
       .i-2, .i-3 {
         text-align: center;
+        font-size: 12px;
       }
       a {
         text-decoration: none;
@@ -156,10 +169,6 @@ footer {
 .v1 {
   top: 688px;
   left: -200px;
-}
-.v2 {
-  top: 900px;
-  right: -200px;
 }
 
 div[id*=chart] {

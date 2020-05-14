@@ -32,12 +32,14 @@ function renderChart2() {
         name: '谣言增长量',
         min: 0,
         max: 50,
+        splitLine: {show: false},
       },
       {
         type: 'value',
         name: '新增感染人数',
         min: 0,
         max: 16000,
+        splitLine: {show: false},
       }
     ],
     series: [

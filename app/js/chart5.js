@@ -19,7 +19,7 @@ function renderChart5() {
       left: 10,
       top: '0',
       bottom: '0',
-      right: 100,
+      right: 80,
     },
     xAxis: {
       splitLine: {show: false},
