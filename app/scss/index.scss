@@ -81,14 +81,14 @@ header {
   height: 500px;
 }
 .row-3 {
-  height: 291px;
+  height: 300px;
   .column-1 {
     width: 55%;
     flex: 0 0 55%;
     display: flex;
     flex-direction: row;
     .left {
-      height: 291px;
+      height: 300px;
       width: 160px;
       display: flex;
       .left-left {
@@ -114,7 +114,7 @@ header {
         align-items: center;
         justify-content: center;
         .top {
-          font-size: 60px;
+          font-size: 52px;
         }
         .five {
           font-size: 124px;
@@ -152,9 +152,25 @@ header {
         font-weight: bold;
       }
     }
+    .item-content {
+      height: 260px;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+      &::-webkit-scrollbar-thumb {
+        width: 6px;
+        background-color: RGB(65, 88, 119);
+      }
+      &::-webkit-scrollbar-track {
+        width: 6px;
+        background-color: #ddd;
+      }
+    }
     .item {
       display: flex;
       border-bottom: 1px solid #999;
+      padding-left: 6px;
       .i-1,.i-2,.i-3 {
         line-height: 30px;
         font-size: 14px;

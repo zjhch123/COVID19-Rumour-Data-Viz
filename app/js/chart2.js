@@ -12,10 +12,9 @@ function renderChart2() {
       }
     },
     grid: {
-      left: '3%',
-      right: '4%',
+      left: '8%',
+      right: '15%',
       bottom: '3%',
-      containLabel: true
     },
     legend: {
       data: ['每日谣言增长量', '每日新增感染人数']

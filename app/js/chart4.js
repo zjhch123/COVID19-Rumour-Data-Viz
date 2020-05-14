@@ -84,8 +84,8 @@ function renderChart4() {
           axisType: 'category',
           autoPlay: true,
           playInterval: 3000,
-          left: '5%',
-          right: '5%',
+          left: '0',
+          right: '0',
           bottom: '3%',
           label: {
             normal: {
