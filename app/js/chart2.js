@@ -44,16 +44,20 @@ function renderChart2() {
     ],
     series: [
       {
-        name: '每日谣言增长量',
-        type: 'bar',
-        data: Data_RumourDailyIncreseCount,
-      },
-      {
         name: '每日新增感染人数',
         type: 'line',
         yAxisIndex: 1,
         data: Data_VirusDailyIncreseCount,
-      }
+        lineStyle: {
+          color: '#f76d6d',
+        }
+      },
+      {
+        name: '每日谣言增长量',
+        type: 'bar',
+        yAxisIndex: 0,
+        data: Data_RumourDailyIncreseCount,
+      },
     ]
   };
   chart.setOption(option, true);

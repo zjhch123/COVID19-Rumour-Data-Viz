@@ -156,6 +156,11 @@ function renderChart4() {
                   show: false,
               }
             },
+            itemStyle: {
+              emphasis: {
+                areaColor: '#bfcde2',
+              }
+            }
           },
         },
         options: []
@@ -171,7 +176,7 @@ function renderChart4() {
             textStyle: {
               color: '#000',
               fontSize: 15,
-              fontFamily: 'Georgia, serif',
+              fontFamily: 'gbk',
             }
           }],
           series: [

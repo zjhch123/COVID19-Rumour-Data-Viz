@@ -49,13 +49,10 @@ function renderChart5() {
       axisTick: {show: false},
       axisLabel: {
         show: false,
-        margin: 30,
-        fontSize: 14,
       },
       axisPointer: {
         label: {
-          show: true,
-          margin: 30
+          show: false,
         }
       }
     }],
@@ -73,7 +70,9 @@ function renderChart5() {
           position: 'right',
           offset: [10, 0],
           textStyle: {
-            fontSize: 12
+            fontSize: 14,
+            fontFamily: 'gbk',
+            color: 'RGB(65, 88, 119)',
           }
         }
       }
@@ -93,7 +92,9 @@ function renderChart5() {
           position: 'right',
           offset: [10, 0],
           textStyle: {
-            fontSize: 12
+            fontSize: 14,
+            fontFamily: 'gbk',
+            color: 'RGB(65, 88, 119)',
           }
         }
       }

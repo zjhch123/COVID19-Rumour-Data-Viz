@@ -4,13 +4,13 @@ function renderChart1() {
   const chart = echarts.init(dom);
   const option = {
     legend: {
-      data: ['当日新增', '当日谣言总量', '数据']
+      data: ['当日谣言总量', '当日新增', '数据'],
     },
     tooltip: {
       trigger: 'axis',
       axisPointer: {
-        type: 'shadow'
-      }
+        type: 'shadow',
+      },
     },
     grid: {
       left: '3%',
@@ -21,7 +21,7 @@ function renderChart1() {
     xAxis: [
       {
         type: 'category',
-        data: Data_Date
+        data: Data_Date,
       }
     ],
     yAxis: [

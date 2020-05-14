@@ -40,16 +40,20 @@ function renderChart3() {
       ],
       series: [
         {
-          name: '政府每日行动数',
-          type: 'bar',
-          data: Data_GovDailyOpreationCount,
-        },
-        {
           name: '每日谣言数量',
           type: 'line',
           yAxisIndex: 1,
           data: Data_RumourDailyIncreseCount,
-        }
+          lineStyle: {
+            color: '#f76d6d',
+          }
+        },
+        {
+          name: '政府每日行动数',
+          type: 'bar',
+          yAxisIndex: 0,
+          data: Data_GovDailyOpreationCount,
+        },
       ]
     };
     chart.setOption(option, true);
