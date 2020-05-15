@@ -9,6 +9,9 @@ function renderChart2() {
         crossStyle: {
           color: '#999'
         }
+      },
+      textStyle: {
+        fontFamily: 'gbk',
       }
     },
     grid: {
@@ -17,7 +20,10 @@ function renderChart2() {
       bottom: '14%',
     },
     legend: {
-      data: ['每日谣言增长量', '每日新增感染人数']
+      data: ['每日谣言增长量', '每日新增感染人数'],
+      textStyle: {
+        fontFamily: 'gbk',
+      }
     },
     xAxis: [
       {
@@ -32,6 +38,9 @@ function renderChart2() {
         min: 0,
         max: 50,
         splitLine: {show: false},
+        nameTextStyle: {
+          fontFamily: 'gbk',
+        }
       },
       {
         type: 'value',
@@ -39,6 +48,9 @@ function renderChart2() {
         min: 0,
         max: 16000,
         splitLine: {show: false},
+        nameTextStyle: {
+          fontFamily: 'gbk',
+        }
       }
     ],
     series: [

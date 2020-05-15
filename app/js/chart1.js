@@ -5,12 +5,18 @@ function renderChart1() {
   const option = {
     legend: {
       data: ['当日谣言总量', '当日新增', '数据'],
+      textStyle: {
+        fontFamily: 'gbk',
+      }
     },
     tooltip: {
       trigger: 'axis',
       axisPointer: {
         type: 'shadow',
       },
+      textStyle: {
+        fontFamily: 'gbk',
+      }
     },
     grid: {
       left: '8%',
@@ -26,7 +32,10 @@ function renderChart1() {
     yAxis: [
       {
         type: 'value',
-        name: '数量',
+        name: '当日新增',
+        nameTextStyle: {
+          fontFamily: 'gbk',
+        }
       }
     ],
     series: [

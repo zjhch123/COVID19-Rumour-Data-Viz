@@ -90,7 +90,7 @@ function renderChart4() {
           label: {
             normal: {
               textStyle: {
-                color: '#000'
+                color: '#000',
               }
             },
             emphasis: {
@@ -136,7 +136,10 @@ function renderChart4() {
               shadowStyle: {
                 color: 'rgba(150,150,150,0.1)' //hover颜色
               }
-            }
+            },
+            textStyle: {
+              fontFamily: 'gbk',
+            },
           },
           geo: {
             show: true,
@@ -150,10 +153,10 @@ function renderChart4() {
             },
             label: {
               normal: {
-                  show: false,
+                show: false,
               },
               emphasis: {
-                  show: false,
+                show: false,
               }
             },
             itemStyle: {
@@ -168,9 +171,10 @@ function renderChart4() {
 
       for (var n = 0; n < year.length; n++) {
         const date = year[n].split('/');
+        const time = `${date[0]}年${date[1]}月${date[2]}日`;
         optionXyMap01.options.push({
           title:[{
-            text: `${date[0]}年${date[1]}月${date[2]}日`,
+            text: time,
             left: 'center',
             top: '3%',
             textStyle: {
@@ -222,12 +226,9 @@ function renderChart4() {
               },
               tooltip: {
                 trigger: 'item',
-                formatter: function (params) {
-                  if(typeof(params.value)[2] == "undefined"){
-                    return params.name + ' : ' + params.value;
-                  }else{
-                    return params.name + ' : ' + params.value[2];
-                  }
+                formatter: params => `${time}<br>${params.name}谣言数量：${params.value[2]}`,
+                textStyle: {
+                  fontFamily: 'gbk',
                 }
               },
               showEffectOn: 'render',
@@ -239,7 +240,10 @@ function renderChart4() {
                 normal: {
                   formatter: '{b}',
                   position: 'right',
-                  show: true
+                  show: true,
+                  textStyle: {
+                    fontFamily: 'gbk',
+                  }
                 }
               },
               itemStyle: {

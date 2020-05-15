@@ -9,6 +9,9 @@ function renderChart3() {
           crossStyle: {
             color: '#999'
           }
+        },
+        textStyle: {
+          fontFamily: 'gbk',
         }
       },
       grid: {
@@ -18,7 +21,10 @@ function renderChart3() {
         containLabel: true
       },
       legend: {
-        data: ['政府每日行动数', '每日谣言数量']
+        data: ['政府每日行动数', '每日谣言数量'],
+        textStyle: {
+          fontFamily: 'gbk',
+        }
       },
       xAxis: [
         {
@@ -33,6 +39,9 @@ function renderChart3() {
           splitLine: {show: false},
           min: 0,
           max: 12,
+          nameTextStyle: {
+            fontFamily: 'gbk',
+          }
         },
         {
           type: 'value',
@@ -40,6 +49,9 @@ function renderChart3() {
           splitLine: {show: false},
           min: 0,
           max: 50,
+          nameTextStyle: {
+            fontFamily: 'gbk',
+          }
         }
       ],
       series: [
