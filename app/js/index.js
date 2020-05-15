@@ -1,6 +1,6 @@
 $('.J_list').append(`
 <div class="item-header">
-  <div class="i-1">谣言浏览量 Top 20 谣言内容</div>
+  <div class="i-1">辟谣谣言浏览量 Top 20 谣言内容</div>
   <div class="i-2">浏览量</div>
   <div class="i-3">评论量</div>
 </div>

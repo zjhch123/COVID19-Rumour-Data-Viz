@@ -1,10 +1,12 @@
 <!doctype html>
 <html>
   <head>
-    <title>COVID-19 · 谣言发展可视化</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
+    <title>COVID-19 · 谣言发展可视化</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/index.css?dsafasdsa" />
     <script src="./lib/echarts.js"></script>
     <script src="./lib/jquery.js"></script>
@@ -20,6 +22,11 @@
       </div>
     </header>
     <main class="container">
+      <div class="row row-text row-text-1">
+        <div class="text">
+          我们从今日头条头条辟谣官方号爬取1月26日至5月7日的谣言共<span class="gray">1567</span>条，并按照发布时间、内容、地点进行分类。根据谣言内容涉及的省份制作成了<span class="gray">动态交互热力地图</span>，可以观察到谣言的数量一直以<span class="gray">湖北</span>为中心，并逐渐向外扩展；同时，谣言数量的增长随疫情的趋缓而逐渐降低，并与病例数成正相关。
+        </div>
+      </div>
       <div class="row row-1">
         <div class="column column-1">
           <div class="chart">
@@ -48,7 +55,13 @@
           </div>
         </div>
       </div>
+      <div class="row row-text row-text-2">
+        <div class="text">
+          下图展示了<span class="gray">谣言数量变化</span>与<span class="gray">政府行动</span>的关系，从中我们可以清晰地看到政府的行动数量与谣言数量成反比，官方信息公开的程度可以有效地降低事件信息的<span class="gray">不确定性</span>，从而减少谣言的增殖。
+        </div>
+      </div>
       <div class="row row-2">
+        <img src="./img/bar.png" class="tool">
         <div class="chart">
           <div class="logo">
             #每日谣言数量和政府每日行动数量柱状折线图
@@ -56,10 +69,17 @@
           <div id="chart3"></div>
         </div>
       </div>
+      <div class="row row-text row-text-3">
+        <div class="text">
+          受众在关注哪些<span class="gray">谣言</span>？这些辟谣谣言的<span class="gray">浏览量</span>和<span class="gray">评论量</span>有多少?
+        </div>
+      </div>
       <div class="row row-3">
         <div class="column column-1">
           <div class="left">
             <div class="left-left">
+              <div>辟</div>
+              <div>谣</div>
               <div>谣</div>
               <div>言</div>
               <div>浏</div>
@@ -79,16 +99,15 @@
           <div class="J_list list"></div>
         </div>
       </div>
-      <img src="./img/virus-1.png" class="v1">
     </main>
     <footer>
       <div class="container source">
-        <div>数据来源：头条辟谣</div>
+        <div>数据来源：头条辟谣、《南方都市报》、中国疾病预防控制中心</div>
         <div>数据截至：2020年5月7日</div>
       </div>
       <div class="blue"></div>
     </footer>
-    
+    <div class="bg-virus"></div>
     <script src="./js/constants.js?421321"></script>
     <script src="./js/data.js?412321"></script>
     <script src="./js/chart1.js?412321"></script>

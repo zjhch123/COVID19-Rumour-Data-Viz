@@ -85,7 +85,22 @@ header {
     color: white;
   }
 }
-
+.row-text {
+  padding-left: 18px;
+  position: relative;
+  
+  color: RGB(65, 88, 119);
+  font-size: 23px;
+  &:before {
+    content: '';
+    width: 8px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: rgb(217, 217, 217);
+  }
+}
 .row-1 {
   height: 435px;
   .column-1 {
@@ -104,6 +119,16 @@ header {
 }
 .row-2 {
   height: 500px;
+  position: relative;
+  .tool {
+    position: absolute;
+    width: 2738px;
+    display: block;
+    transform: scale(0.343);
+    transform-origin: top left;
+    left: 90px;
+    top: 60px;
+  }
 }
 .row-3 {
   height: 300px;
@@ -234,16 +259,16 @@ footer {
     }
   }
 }
-.v1,
-.v2 {
+.bg-virus {
+  width: 100%;
+  height: 1067px;
   position: absolute;
-  z-index: 1;
-  display: block;
-  width: 350px;
-}
-.v1 {
-  top: 688px;
-  left: -200px;
+  left: 0;
+  top: 450px;
+  background-image: url(../img/bg-virus.png);
+  background-size: 1390px 1067px;
+  background-repeat: no-repeat;
+  background-position: 35% center;
 }
 
 div[id*=chart] {

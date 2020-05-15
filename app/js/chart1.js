@@ -14,7 +14,7 @@ function renderChart1() {
     },
     grid: {
       left: '8%',
-      right: '4%',
+      right: '5%',
       bottom: '14%',
     },
     xAxis: [

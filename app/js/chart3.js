@@ -31,11 +31,15 @@ function renderChart3() {
           type: 'value',
           name: '政府每日行动数',
           splitLine: {show: false},
+          min: 0,
+          max: 12,
         },
         {
           type: 'value',
           name: '每日谣言数量',
           splitLine: {show: false},
+          min: 0,
+          max: 50,
         }
       ],
       series: [
