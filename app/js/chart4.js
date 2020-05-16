@@ -133,7 +133,7 @@ function renderChart4() {
 
   for (var n = 0; n < year.length; n++) {
     const date = year[n].split('/');
-    const time = `${date[0]}年${date[1]}月${date[2]}日`;
+    const time = [date[0], "年", date[1], "月", date[2], "日"].join('');
     optionXyMap01.options.push({
       title:[{
         text: time,
@@ -188,7 +188,7 @@ function renderChart4() {
           },
           tooltip: {
             trigger: 'item',
-            formatter: params => `${time}<br>${params.name}谣言数量：${params.value[2]}`,
+            formatter: function (params) { return [time, '<br>', params.name, '谣言数量：', params.value[2]].join(''); },
             textStyle: {
               fontFamily: 'gbk',
             }

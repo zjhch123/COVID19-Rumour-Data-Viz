@@ -1,5 +1,7 @@
 const { series, watch, src, dest, parallel  } = require('gulp');
 const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
 const webserver = require('gulp-webserver');
 
 function css() {
@@ -7,6 +9,9 @@ function css() {
     .pipe(sass({
       outputStyle: 'compressed'
     }).on('error', sass.logError))
+    .pipe(postcss([
+      autoprefixer({ overrideBrowserslist: ['last 1 version', 'IE 10'] })
+    ]))
     .pipe(dest('./app/css'));
 }
 

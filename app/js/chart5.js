@@ -11,8 +11,9 @@ function renderChart5() {
         type: 'shadow',
         snap: false,
       },
-      formatter: ([{ dataIndex }]) => {
-        return `${Data_RumourTop20[dataIndex][1]}<br>浏览量 : ${Data_RumourTop20[dataIndex][2]}<br>评论量 : ${Data_RumourTop20[dataIndex][3]}`
+      formatter: function(data) {
+        const dataIndex = data[0].dataIndex;
+        return [Data_RumourTop20[dataIndex][1], '<br>浏览量 : ', Data_RumourTop20[dataIndex][2], '评论量 : ', Data_RumourTop20[dataIndex][3]].join('')
       },
       textStyle: {
         fontFamily: 'gbk',
@@ -43,7 +44,7 @@ function renderChart5() {
       max: 5000,
     }],
     yAxis: [{
-      data: Data_RumourTop20.slice(0, 5).map((row, index) => ``),
+      data: Data_RumourTop20.slice(0, 5).map(function() { return '' }),
       inverse: true,
       axisLine: {show: false},
       axisTick: {show: false},
@@ -63,7 +64,7 @@ function renderChart5() {
       symbolRepeat: true,
       symbolMargin: '8%',
       symbolSize: 20,
-      data: Data_RumourTop20.slice(0, 5).map(data => Number(data[2])),
+      data: Data_RumourTop20.slice(0, 5).map(function(data) { return Number(data[2]) }),
       label: {
         normal: {
           show: true,
@@ -84,7 +85,7 @@ function renderChart5() {
       symbolMargin: '8%',
       symbolSize: 20,
       barGap: '10%',
-      data: Data_RumourTop20.slice(0, 5).map(data => Number(data[3])),
+      data: Data_RumourTop20.slice(0, 5).map(function (data) { return Number(data[3]); }),
       xAxisIndex: 1,
       label: {
         normal: {
