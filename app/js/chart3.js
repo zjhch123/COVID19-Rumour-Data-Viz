@@ -1,4 +1,4 @@
-// 政府每日行动数量/每日谣言数量的关系
+// 每日政府行动数量/每日谣言增长量的关系
 function renderChart3() {
     const dom = document.getElementById("chart3");
     const chart = echarts.init(dom);
@@ -21,7 +21,7 @@ function renderChart3() {
         containLabel: true
       },
       legend: {
-        data: ['政府每日行动数', '每日谣言数量'],
+        data: ['每日政府行动数', '每日谣言增长量'],
         textStyle: {
           fontFamily: 'gbk',
         }
@@ -35,7 +35,7 @@ function renderChart3() {
       yAxis: [
         {
           type: 'value',
-          name: '政府每日行动数',
+          name: '每日政府行动数',
           splitLine: {show: false},
           min: 0,
           max: 12,
@@ -45,7 +45,7 @@ function renderChart3() {
         },
         {
           type: 'value',
-          name: '每日谣言数量',
+          name: '每日谣言增长量',
           splitLine: {show: false},
           min: 0,
           max: 50,
@@ -56,7 +56,7 @@ function renderChart3() {
       ],
       series: [
         {
-          name: '每日谣言数量',
+          name: '每日谣言增长量',
           type: 'line',
           yAxisIndex: 1,
           data: Data_RumourDailyIncreseCount,
@@ -65,7 +65,7 @@ function renderChart3() {
           }
         },
         {
-          name: '政府每日行动数',
+          name: '每日政府行动数',
           type: 'bar',
           yAxisIndex: 0,
           data: Data_GovDailyOpreationCount,

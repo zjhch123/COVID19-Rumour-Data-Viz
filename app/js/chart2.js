@@ -15,7 +15,7 @@ function renderChart2() {
       }
     },
     grid: {
-      left: '8%',
+      left: '12%',
       right: '15%',
       bottom: '14%',
     },
@@ -34,7 +34,7 @@ function renderChart2() {
     yAxis: [
       {
         type: 'value',
-        name: '谣言增长量',
+        name: '每日谣言增长量',
         min: 0,
         max: 50,
         splitLine: {show: false},
@@ -44,7 +44,7 @@ function renderChart2() {
       },
       {
         type: 'value',
-        name: '新增感染人数',
+        name: '每日新增感染人数',
         min: 0,
         max: 16000,
         splitLine: {show: false},

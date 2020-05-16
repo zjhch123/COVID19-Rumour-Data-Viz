@@ -4,7 +4,7 @@ function renderChart1() {
   const chart = echarts.init(dom);
   const option = {
     legend: {
-      data: ['当日谣言总量', '当日新增', '数据'],
+      data: ['每日谣言总量', '每日谣言增长量', '数据'],
       textStyle: {
         fontFamily: 'gbk',
       }
@@ -19,8 +19,8 @@ function renderChart1() {
       }
     },
     grid: {
-      left: '8%',
-      right: '5%',
+      left: '12%',
+      right: '12%',
       bottom: '14%',
     },
     xAxis: [
@@ -32,7 +32,16 @@ function renderChart1() {
     yAxis: [
       {
         type: 'value',
-        name: '当日新增',
+        name: '每日谣言增长量',
+        splitLine: {show: false},
+        nameTextStyle: {
+          fontFamily: 'gbk',
+        }
+      },
+      {
+        type: 'value',
+        name: '每日谣言总量',
+        splitLine: {show: false},
         nameTextStyle: {
           fontFamily: 'gbk',
         }
@@ -40,15 +49,17 @@ function renderChart1() {
     ],
     series: [
       {
-        name: '当日新增',
-        type: 'bar',
-        stack: '数据',
+        name: '每日谣言增长量',
+        type: 'line',
         data: Data_RumourDailyIncreseCount,
+        lineStyle: {
+          color: '#f76d6d',
+        }
       },
       {
-        name: '当日谣言总量',
+        name: '每日谣言总量',
         type: 'bar',
-        stack: '数据',
+        yAxisIndex: 1,
         data: Data_RumourDailyCount,
       },
     ]
