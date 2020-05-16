@@ -1,3 +1,1 @@
-# Coronavirus data viz
-
 ![Preview](https://raw.githubusercontent.com/zjhch123/Coronavirus_data_vis/master/demo/preview.png)
