@@ -10,7 +10,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-webserver": "^0.9.1",
-    "node-sass": "^7.0.0"
+    "node-sass": "^7.0.3"
   },
   "scripts": {
     "dev": "gulp dev"
