@@ -5,9 +5,9 @@
   "main": "app/index.html",
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^9.7.6",
+    "autoprefixer": "^10.4.16",
     "gulp": "^4.0.2",
-    "gulp-postcss": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-webserver": "^0.9.1",
     "node-sass": "^7.0.3"
